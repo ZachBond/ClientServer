@@ -12,6 +12,29 @@ namespace DBSystem.ENTITIES
     [Table("Player")]
     public class Player
     {
-        
+        [Key]
+        public int PlayerID { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+
+        public int Age { get; set; }
+
+        public string Gender { get; set; }
+
+        public string AlbertaHealthCareNumber { get; set; }
+
+        public string MedicalAlertDetails { get; set; }
+
+        [NotMapped]
+        public string FirstandLast
+        {
+            get
+            {
+                return FirstName + "(" + LastName + ")";
+            }
+        }
+
     }
+
+    
 }

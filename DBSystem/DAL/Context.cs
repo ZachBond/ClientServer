@@ -16,6 +16,11 @@ namespace DBSystem.DAL
         public DbSet<Category> Categories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<Team> Teams { get; set; }
+
+        public DbSet<Player> Players { get; set; }
+
+        public DbSet<Guardian> Guardians { get; set; }
     }
     internal class ContextFSIS : DbContext
     {
